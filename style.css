@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+.cardContainer {
+  display:flex;
+  flex-direction: column;
+  width:200px;
+  margin:10px;
+  border: 1px solid ;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cardContainer > img {
+  width:100%;
+  height:auto;
+  margin-bottom: 10px;
+}
+
+.cardContainer > h1 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cardRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #f2f2f2;
+  margin-bottom: 10%;
+}
+
+header h1 {
+  text-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0px 0px 30px #fff, 0px 0px 40px #ff00de, 0px 0px 70px #ff00de, 0px 0px 80px #ff00de, 0px 0px 100px #ff00de, 0px 0px 150px #ff00de;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0px 0px 30px #fff, 0px 0px 40px #ff00de, 0px 0px 70px #ff00de, 0px 0px 80px #ff00de, 0px 0px 100px #ff00de, 0px 0px 150px #ff00de;
+  }
+  to {
+    text-shadow: 0px 0px 20px #fff, 0px 0px 40px #fff, 0px 0px 60px #fff, 0px 0px 80px #ff00de, 0px 0px 140px #ff00de, 0px 0px 160px #ff00de, 0px 0px 200px #ff00de, 0px 0px 300px #ff00de;
+  }
+}
